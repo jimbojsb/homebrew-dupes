@@ -45,8 +45,9 @@ class Httpd < Formula
       <string>#{plist_name}</string>
       <key>ProgramArguments</key>
       <array>
-        <string>#{opt_prefix}/sbin/apachectl</string>
-        <string>start</string>
+        <string>#{opt_prefix}/sbin/httpd</string>
+        <string>-D</string>
+        <string>FOREGROUND</string>
       </array>
       <key>RunAtLoad</key>
       <true/>
